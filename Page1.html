@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!--- Detta visar vilket typ av dokument som visas (HTML) Grundstrukturen-->
+<html lang="en">
+  <!-- allt inne håll måste vara inom html elementen och språket är engelska-->
+  <head>
+    <!-- innehåller metadata om sidan, t.ex. sidonamn.-->
+    <meta charset="UTF-8" />
+    <!-- så vi kan använda oss utav bokstäver, 8= 8bitar-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- tala om för microsoft internett expolorer att använda senaste metoden av renderingmotorn och att den berättar för webbläsaren att den använder 8-bitar-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ger information om responsiviteten så den arbetar med dimenstion och skalbarhet-->
+    <!--namn på taben-->
+    <title>Claudia Kolitas Portfolio</title>
+    <!--Koppla ihop css med html-->
+    <link rel="stylesheet" href="style.css" />
+    <!-- länk för google foonts som man sedan kopplar i css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- sluttagg för innehåller metadata om sidan, t.ex. sidonamn.-->
+  <body>
+    <!--Strukturen av vad som visas på skärmen-->
+    <!-- ( här börjar taggen) för att all information ska snynas så ska de vara innuti taggen body -->
+    <div class="other-page">
+      <!-- class=" är de namnet man skapar, för att anropa det i css, och ändra utseende, plats osv."-->
+      <div class="navBar">
+        <!-- class=" är de namnet man skapar, för att anropa det i css, och ändra utseende, plats osv."-->
+        <a class="topbar" href="index.html">Home</a>
+        <!-- a= typ av element, href=är för att kunna länka," här ligger själva länken", namnet som visas på hemsidan så man kan trycka för att navigeras, </a> är slut taggen för att stänga elemenet -->
+        <a href="page1.html" alt=" link to my page about me ">About</a>
+        <!-- a= typ av element, href=är för att kunna länka," här är länken till första sidan som heter about", namnet som visas på hemsidan så man kan trycka för att navigeras, </a> är slut taggen för att stänga elemenet -->
+        <a href="page2.html" alt=" link to my portfolio that i call work"
+          >Work</a
+        >
+        <!-- a= typ av element, href=är för att kunna länka," här ligger själva länken till sidan work", namnet som visas på hemsidan så man kan trycka för att navigeras, </a> är slut taggen för att stänga elemenet -->
+        <a href="mailto:Claudia.Kolitas@chasacademy.se?Subject=Ska vi team up?"
+          >Mail</a
+        ><!-- länk till min mejl med subjekt ska vi team up?, så användaren kan mejla mig när de trycker på contact, </a>-->
+        <a href="https://www.linkedin.com/in/claudia-kolitas/">Linkedin</a>
+        <!-- a= typ av element, href=är för att kunna länka," länken till min profil på Linkedin", namnet som visas på hemsidan så man kan trycka för att navigeras, </a> är slut taggen för att stänga elemenet -->
+        <a href="https://www.instagram.com/claudiakolitas/">Instagram</a>
+        <!-- a= typ av element, href=är för att kunna länka,"länken till min profil på Instagram", namnet som visas på hemsidan så man kan trycka för att navigeras,  </a> är slut taggen för att stänga elemenet -->
+      </div>
+      <!-- slutdiv för klassen navBar-->
+      <header>
+        <!-- start allt som ska vara på sidhuvudet-->
+        <h1>Tjooohooo!</h1>
+        <!-- header 1 = huvudrubrik, nivå 1 av 6-->
+      </header>
+      <!-- stäng allt som ska vara i sidhuvudet-->
+      <section>
+        <!-- fristånde dokument-->
+        <br />
+        <!-- break, infogar radbryte-->
+        <div class="profil">
+          <!-- klass för att skapa flexbox-->
+          <div class="rad1">
+            <!-- klass för de de olika boxarna detta är box1 som man sen anropar i css för positionering och färg-->
+          </div>
+          <!-- sluttagg för rad1-->
+          <div class="rad2">
+            <!-- klass för de de olika boxarna detta är box2 som man sen anropar i css för positionering och färg-->
+            <!--- start img tagg för att kunna placera en bild inom boxen samt använda sig av en ram och beskära bilden rund i css-->
+            <figure>
+              <!-- figure är för fristående innehåll-->
+              <img
+                src="images/Screenshot 2022-02-02 at 18.44.46.png"
+                alt="Bild på Claudia"
+                style="width: 100%"
+              />
+              <!-- slut tagg för bilden-->
+            </figure>
+            <!-- avslut för fristående innehåll-->
+          </div>
+          <!-- sluttagg för rad2-->
+          <div class="rad4">
+            <!-- start klass för de de olika boxarna detta är box4 som har en header 1 och lite text om mig-->
+            <!-- slut på klassen quots-->
+          </div>
+          <!-- slut tagg för rad4-->
+        </div>
+        <!-- slut tagg för profil-->
+      </section>
+      <!-- slut tagg för sektion-->
+      <!-- break, infogar radbryte-->
+      <br />
+      <br />
+      <div class="quots">
+        <!-- Skapaden en klass quots så jag kan ändra utseende på klassen mus i css-->
+        <!-- mus over and out!  en klass som skapar möjligheten att kunna röra musen fram och tillbaka på texten, första gången syns det som står nedan, 
+          detta visas bara 1 gång, men i javascript så kan man manupilera dom-trädet genom att den ändrar text till 2 olika texter som visas istället, när sidan uppdateras så syns denna text om igen.--->
+        <div class="mus" onmouseover="over(this)" onmouseout="out(this)">
+          Click here if you want the truth about UX
+        </div>
+        <!-- slut om over and out mus funktionen-->
+        <!-- id betyder ett specifik klass där man tilldelar unika element till just den klassen, så i detta fall så vill vi att ID switch-->
+        <p id="switch"></p>
+        <br />
+        <br />
+        <!-- div, är till för att separera olika viktiga element från varandra, den syns inte men du bestämmer vad du vill stoppa in i den-->
+        <div class="row">
+          <!-- divklasseen för att kunna skapa strukturen för korten-->
+          <div class="column">
+            <!-- klass för de ytre runt boxen i css för positionering och färg-->
+            <div class="card">
+              <!-- första boxen (card) innehåller header element samt paragraf element.-->
+              <p>About me:</p>
+              <!-- start och slut, header 3, nivå av rubrik-->
+              <p>
+                <!-- paragraf, text-->
+                I love creating products with an idea and then realizing it
+                using color and shape. I have a great interest in technology,
+                form and speed. My interests are to be with my family and
+                friends.
+              </p>
+              <!-- slut på paragraf-->
+            </div>
+            <!-- sluttagg för klass card-->
+          </div>
+          <!-- sluttagg för klass column-->
+          <div class="column">
+            <!-- klass för de ytre runt boxen i css för positionering och färg-->
+            <div class="card">
+              <!-- första boxen (card) innehåller header element samt paragraf element.-->
+              <p>Education</p>
+              <!-- start och slut, header 3, nivå av rubrik-->
+              <!-- Header 3 hudvudrukbrik, rubrik nivå 3 start och sluttagg placerad brevid varandra-->
+              <p>Cybergymnasiet</p>
+              <!-- paragraf text start och slut tagg-->
+              <p>Media with photogrphy</p>
+              <!-- paragraf text start och slut tagg-->
+              <p>Chas academy: UX-Designer with requirements analysis</p>
+              <!-- paragraf text start och slut tagg-->
+              <p>Always wanting to learn more.</p>
+              <!-- paragraf text start och slut tagg-->
+            </div>
+            <!-- div sluttagg på klassen card-->
+          </div>
+          <!-- div sluttagg på klassen column-->
+          <br />
+          <!-- break, infogar radbryte-->
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <!-- divklass för att skapa en footer längst ned på sidan med information-->
+          <div class="footer1">
+            <!-- klassen footer1 anorpas i css för utseende för flexboxden-->
+            <div class="textfoot">
+              <!-- klassen textfoot anorpas i css för flexboxens utseende->
+        <!-divklasseen för att kunna skapa strukturen för boxen-->
+              <div class="fot1">
+                <!--- första klassen för 1 boxen (fot1) i boxen ligger paragrafen nedan-->
+                <p>INTERESTED?</p>
+                <!-- paragraf text start och slut tagg-->
+              </div>
+              <!-- sluttagg på fot1-->
+              <div class="fot2">
+                <!-- start div tagg för klass fot2-->
+                <p>Who knows, We might become colleagues</p>
+                <!-- paragraf text start och slut tagg-->
+              </div>
+              <!-- slutdivenför fot2-->
+            </div>
+            <!--- slut tagg på diven-->
+          </div>
+          <!--- slut tagg på diven-->
+        </div>
+        <!--- slut tagg på diven-->
+      </div>
+      <!-- slut på qoutstaggen-->
+    </div>
+    <!-- slut på other-page taggen-->
+    <!-- här slutar taggen på bodyn klassen-->
+    <!--Koppla ihop med javascript-->
+    <script src="index.js"></script>
+  </body>
+  <!-- här slutar taggen på bodyn-->
+</html>
+<!-- här slutar taggen på html elementet-->
